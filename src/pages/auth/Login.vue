@@ -10,6 +10,14 @@
 
       <q-card-actions class="px-40" align="center">
         <qx-btn label="Login" class="full-width" />
+        <q-btn
+          to="/auth/signup"
+          class="mt-20"
+          flat
+          color="grey"
+          label="Criar nova conta"
+        />
+        <q-btn flat color="grey" label="Esqueci minha senha" />
       </q-card-actions>
     </q-card>
   </div>
