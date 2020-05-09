@@ -43,7 +43,7 @@ module.exports = function (/* ctx */) {
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
     framework: {
-      iconSet: 'eva', // Quasar icon set
+      iconSet: 'eva-icons', // Quasar icon set
       lang: 'pt-br', // Quasar language pack
 
       // Possible values for "all":
