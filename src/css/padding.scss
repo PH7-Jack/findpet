@@ -1,0 +1,181 @@
+  @for $i from 0 to 151 {
+    .p-#{$i} {
+      padding: $i + px !important;
+    }
+
+    .px-#{$i} {
+      padding-left: $i+px !important;
+      padding-right: $i+px !important;
+    }
+
+    .py-#{$i} {
+      padding-top: $i+px !important;
+      padding-bottom: $i+px !important;
+    }
+
+
+    .pt-#{$i} {
+      padding-top: $i + px !important;
+    }
+
+    .pb-#{$i} {
+      padding-bottom: $i + px !important;
+    }
+
+    .pl-#{$i} {
+      padding-left: $i + px !important;
+    }
+
+    .pr-#{$i} {
+      padding-right: $i + px !important;
+    }
+  }
+
+  /* Large desktops and laptops */
+  @media (min-width: 1200px) {
+    $size: "lg";
+
+    @for $i from 0 to 151 {
+      .p-#{$size}-#{$i} {
+        padding: $i + px !important;
+      }
+
+      .px-#{$size}-#{$i} {
+        padding-left: $i+px !important;
+        padding-right: $i+px !important;
+      }
+
+      .py-#{$size}-#{$i} {
+        padding-top: $i+px !important;
+        padding-bottom: $i+px !important;
+      }
+
+      .pt-#{$size}-#{$i} {
+        padding-top: $i + px !important;
+      }
+
+      .pb-#{$size}-#{$i} {
+        padding-bottom: $i + px !important;
+      }
+
+      .pr-#{$size}-#{$i} {
+        padding-right: $i + px !important;
+      }
+
+      .pl-#{$size}-#{$i} {
+        padding-left: $i + px !important;
+      }
+    }
+  }
+
+  /* Landscape tablets and medium desktops */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    $size: "md";
+
+    @for $i from 0 to 151 {
+      .p-#{$size}-#{$i} {
+        padding: $i + px !important;
+      }
+
+      .px-#{$size}-#{$i} {
+        padding-left: $i+px !important;
+        padding-right: $i+px !important;
+      }
+
+      .py-#{$size}-#{$i} {
+        padding-top: $i+px !important;
+        padding-bottom: $i+px !important;
+      }
+
+      .pt-#{$size}-#{$i} {
+        padding-top: $i + px !important;
+      }
+
+      .pb-#{$size}-#{$i} {
+        padding-bottom: $i + px !important;
+      }
+
+      .pr-#{$size}-#{$i} {
+        padding-right: $i + px !important;
+      }
+
+      .pl-#{$size}-#{$i} {
+        padding-left: $i + px !important;
+      }
+    }
+  }
+
+  /* Portrait tablets and small desktops */
+  @media (min-width: 765px) and (max-width: 991px) {
+    $size: "sm";
+
+    @for $i from 0 to 151 {
+      .p-#{$size}-#{$i} {
+        padding: $i + px !important;
+      }
+
+      .px-#{$size}-#{$i} {
+        padding-left: $i+px !important;
+        padding-right: $i+px !important;
+      }
+
+      .py-#{$size}-#{$i} {
+        padding-top: $i+px !important;
+        padding-bottom: $i+px !important;
+      }
+
+      .pt-#{$size}-#{$i} {
+        padding-top: $i + px !important;
+      }
+
+      .pb-#{$size}-#{$i} {
+        padding-bottom: $i + px !important;
+      }
+
+      .pr-#{$size}-#{$i} {
+        padding-right: $i + px !important;
+      }
+
+      .pl-#{$size}-#{$i} {
+        padding-left: $i + px !important;
+      }
+    }
+  }
+
+
+  /* Portrait phones and smaller */
+  @media (max-width: 480px) {
+    $size: "xs";
+
+    @for $i from 0 to 151 {
+      .p-#{$size}-#{$i} {
+        padding: $i + px !important;
+      }
+
+      .px-#{$size}-#{$i} {
+        padding-left: $i+px !important;
+        padding-right: $i+px !important;
+      }
+
+      .py-#{$size}-#{$i} {
+        padding-top: $i+px !important;
+        padding-bottom: $i+px !important;
+      }
+
+      .pt-#{$size}-#{$i} {
+        padding-top: $i + px !important;
+      }
+
+      .pb-#{$size}-#{$i} {
+        padding-bottom: $i + px !important;
+      }
+
+      .pr-#{$size}-#{$i} {
+        padding-right: $i + px !important;
+      }
+
+      .pl-#{$size}-#{$i} {
+        padding-left: $i + px !important;
+      }
+    }
+  }

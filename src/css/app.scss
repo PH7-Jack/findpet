@@ -1,1 +1,16 @@
 // app global css in SCSS form
+body {
+  background: #dddddd;
+}
+
+.vx-shadow {
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, .1);
+}
+
+.vx-shadow-light {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 0px;
+}
+
+.qx-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

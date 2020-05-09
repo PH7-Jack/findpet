@@ -1,0 +1,64 @@
+@for $i from 0 to 151 {
+  .fs-#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  $size: "lg";
+
+  @for $i from 0 to 151 {
+    .fs-#{$size}-#{$i} {
+      font-size: $i + px !important;
+    }
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  $size: "md";
+
+  @for $i from 0 to 151 {
+    .fs-#{$size}-#{$i} {
+      font-size: $i + px !important;
+    }
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  $size: "sm";
+
+  @for $i from 0 to 151 {
+    .fs-#{$size}-#{$i} {
+      font-size: $i + px !important;
+    }
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  $size: "sm";
+
+  @for $i from 0 to 151 {
+    .fs-#{$size}-#{$i} {
+      font-size: $i + px !important;
+    }
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  $size: "xs";
+
+  @for $i from 0 to 151 {
+    .fs-#{$size}-#{$i} {
+      font-size: $i + px !important;
+    }
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}

@@ -1,0 +1,165 @@
+/*
+0    <= xs < 600
+600  <= sm < 1024
+1024 <= md < 1440
+1440 <= lg < 1920
+1920 <= xl < inf.
+*/
+
+@for $i from 0 to 131 {
+  .m-#{$i} {
+    margin: $i + px !important
+  }
+
+  .ml-#{$i} {
+    margin-left: $i + px !important
+  }
+
+  .mr-#{$i} {
+    margin-right: $i + px !important
+  }
+
+  .mt-#{$i} {
+    margin-top: $i + px !important
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i + px !important
+  }
+}
+
+// xs
+@media (max-width: $breakpoint-xs) {
+  $prefix: 'xs';
+
+  @for $i from 0 to 131 {
+    .m-#{$prefix}-#{$i} {
+      margin: $i + px !important
+    }
+
+    .ml-#{$prefix}-#{$i} {
+      margin-left: $i + px !important
+    }
+
+    .mr-#{$prefix}-#{$i} {
+      margin-right: $i + px !important
+    }
+
+    .mt-#{$prefix}-#{$i} {
+      margin-top: $i + px !important
+    }
+
+    .mb-#{$prefix}-#{$i} {
+      margin-bottom: $i + px !important
+    }
+  }
+}
+
+
+// sm
+@media (min-width: 600px) and (max-width: 1024px) {
+  $prefix: 'sm';
+
+  @for $i from 0 to 131 {
+    .m-#{$prefix}-#{$i} {
+      margin: $i + px !important
+    }
+
+    .ml-#{$prefix}-#{$i} {
+      margin-left: $i + px !important
+    }
+
+    .mr-#{$prefix}-#{$i} {
+      margin-right: $i + px !important
+    }
+
+    .mt-#{$prefix}-#{$i} {
+      margin-top: $i + px !important
+    }
+
+    .mb-#{$prefix}-#{$i} {
+      margin-bottom: $i + px !important
+    }
+  }
+}
+
+//  md
+@media (min-width: 1024px) and (max-width: 1440px) {
+  $prefix: 'md';
+
+  @for $i from 0 to 131 {
+    .m-#{$prefix}-#{$i} {
+      margin: $i + px !important
+    }
+
+    .ml-#{$prefix}-#{$i} {
+      margin-left: $i + px !important
+    }
+
+    .mr-#{$prefix}-#{$i} {
+      margin-right: $i + px !important
+    }
+
+    .mt-#{$prefix}-#{$i} {
+      margin-top: $i + px !important
+    }
+
+    .mb-#{$prefix}-#{$i} {
+      margin-bottom: $i + px !important
+    }
+  }
+}
+
+// lg
+@media (min-width: 1440px) and (max-width: 1920px) {
+  $prefix: 'lg';
+
+  @for $i from 0 to 131 {
+    .m-#{$prefix}-#{$i} {
+      margin: $i + px !important
+    }
+
+    .ml-#{$prefix}-#{$i} {
+      margin-left: $i + px !important
+    }
+
+    .mr-#{$prefix}-#{$i} {
+      margin-right: $i + px !important
+    }
+
+    .mt-#{$prefix}-#{$i} {
+      margin-top: $i + px !important
+    }
+
+    .mb-#{$prefix}-#{$i} {
+      margin-bottom: $i + px !important
+    }
+  }
+}
+
+// xl
+@media (min-width: 1920px) {
+  $prefix: 'xl';
+
+  @for $i from 0 to 131 {
+    .m-#{$prefix}-#{$i} {
+      margin: $i + px !important
+    }
+
+    .ml-#{$prefix}-#{$i} {
+      margin-left: $i + px !important
+    }
+
+    .mr-#{$prefix}-#{$i} {
+      margin-right: $i + px !important
+    }
+
+    .mt-#{$prefix}-#{$i} {
+      margin-top: $i + px !important
+    }
+
+    .mb-#{$prefix}-#{$i} {
+      margin-bottom: $i + px !important
+    }
+  }
+}
