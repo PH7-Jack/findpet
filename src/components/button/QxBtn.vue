@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-btn
+      v-bind="$attrs"
       class="round-38 full-width qx-shadow"
       color="primary"
       :label="label"
