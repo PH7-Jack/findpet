@@ -12,7 +12,7 @@
       </q-card-section>
 
       <q-card-actions class="px-40" align="center">
-        <qx-btn label="Criar Conta" class="full-width" />
+        <qx-btn push label="Criar Conta" class="full-width" />
       </q-card-actions>
     </q-card>
   </div>
