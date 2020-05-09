@@ -33,6 +33,13 @@
 
       <q-card-actions class="px-40" align="center">
         <qx-btn push label="Criar Conta" class="full-width" />
+        <q-btn
+          to="/auth/login"
+          class="mt-20"
+          flat
+          color="grey"
+          label="Fazer Login"
+        />
       </q-card-actions>
     </q-card>
   </div>
