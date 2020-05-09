@@ -3,11 +3,31 @@
     <q-card flat class="bg-transparent">
       <q-card-section>
         <q-form class="q-gutter-sm">
-          <qx-input label="Nome Completo" v-model="name" />
-          <qx-input label="Email" v-model="email" />
-          <qx-input label="Username" v-model="username" />
-          <qx-password label="Senha" v-model="password" />
-          <qx-password label="Confirme sua Senha" v-model="password" />
+          <qx-input
+            label="Nome Completo"
+            placeholder="Digite seu nome"
+            v-model="name"
+          />
+          <qx-input
+            label="Email"
+            placeholder="Use seu melhor email"
+            v-model="email"
+          />
+          <qx-input
+            label="Username"
+            placeholder="Username da sua conta"
+            v-model="username"
+          />
+          <qx-password
+            label="Senha"
+            placeholder="Escolha uma senha forte"
+            v-model="password"
+          />
+          <qx-password
+            label="Confirme sua Senha"
+            placeholder="Repita sua senha"
+            v-model="password"
+          />
         </q-form>
       </q-card-section>
 
