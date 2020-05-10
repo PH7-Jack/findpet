@@ -4,21 +4,50 @@
       <div class="row">
         <div class="col row">
           <div class="col-6 text-center">
-            <q-btn :size="size" color="grey-8" flat round icon="eva-bell-outline" />
+            <q-btn
+              :size="size"
+              color="grey-8"
+              flat
+              round
+              icon="eva-bell-outline"
+            />
           </div>
           <div class="col-6 text-center">
-            <q-btn :size="size" color="grey-8" flat round icon="eva-heart-outline" />
+            <q-btn
+              :size="size"
+              color="grey-8"
+              flat
+              round
+              icon="eva-heart-outline"
+            />
           </div>
         </div>
         <div class="col-4 flex flex-center">
-          <q-btn class="action-btn shadow-5" color="primary" round icon="fa fa-paw" />
+          <q-btn
+            class="action-btn shadow-5"
+            color="primary"
+            round
+            icon="fa fa-paw"
+          />
         </div>
         <div class="col row">
           <div class="col-6 text-center">
-            <q-btn :size="size" color="grey-8" flat round icon="eva-message-circle-outline" />
+            <q-btn
+              :size="size"
+              color="grey-8"
+              flat
+              round
+              icon="eva-message-circle-outline"
+            />
           </div>
           <div class="col-6 text-center">
-            <q-btn :size="size" color="grey-8" flat round icon="eva-person-outline" />
+            <q-btn
+              :size="size"
+              color="grey-8"
+              flat
+              round
+              icon="eva-person-outline"
+            />
           </div>
         </div>
       </div>
@@ -48,7 +77,7 @@ export default {
 
 .action-btn {
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
   padding: 6px;
 }
 </style>
