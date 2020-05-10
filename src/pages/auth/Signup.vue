@@ -35,7 +35,7 @@
         <qx-btn push label="Criar Conta" class="full-width" />
         <q-btn
           to="/auth/login"
-          class="mt-20"
+          class="mt-10 text-weight-light"
           flat
           color="grey"
           label="Fazer Login"
