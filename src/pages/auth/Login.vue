@@ -12,7 +12,7 @@
         <qx-btn label="Login" class="full-width" />
         <q-btn
           to="/auth/signup"
-          class="mt-20 fs-14 text-weight-light"
+          class="mt-20 fs-14 text-weight-light col-12"
           flat
           color="grey"
           label="Criar nova conta"
@@ -21,7 +21,7 @@
           flat
           color="grey"
           label="Esqueci minha senha"
-          class="fs-14 text-weight-light m-0"
+          class="fs-14 text-weight-light m-0 col-12"
         />
       </q-card-actions>
     </q-card>
