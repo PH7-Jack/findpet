@@ -3,8 +3,12 @@
     <q-card flat class="bg-transparent">
       <q-card-section>
         <q-form class="q-gutter-sm">
-          <qx-input label="Email" v-model="email" />
-          <qx-password label="Senha" v-model="password" />
+          <qx-input
+            placeholder="Seu email ou username"
+            label="Email"
+            v-model="email"
+          />
+          <qx-password placeholder="Senha" label="Senha" v-model="password" />
         </q-form>
       </q-card-section>
 
