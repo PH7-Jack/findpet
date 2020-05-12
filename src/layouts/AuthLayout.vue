@@ -12,15 +12,18 @@
         </div>
       </div>
       <router-view />
+      <o-auth class="mt-10"></o-auth>
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-
 export default {
   name: 'AuthLayout',
 
+  components: {
+    OAuth: () => import('components/button/OAuth')
+  },
   data () {
     return {
     }
