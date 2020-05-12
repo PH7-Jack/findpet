@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="flex flex-center">
-    <q-page-container>
+    <q-page-container class="pt-20 pb-20">
       <div class="text-center">
         <q-img width="150px" src="/statics/images/logo.svg" />
         <div>
