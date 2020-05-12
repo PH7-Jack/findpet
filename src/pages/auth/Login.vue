@@ -13,7 +13,7 @@
       </q-card-section>
 
       <q-card-actions class="px-40" align="center">
-        <qx-btn label="Login" class="full-width" />
+        <qx-btn to="/" label="Login" class="full-width" />
         <q-btn
           to="/auth/signup"
           class="mt-20 fs-14 text-weight-light col-12"
