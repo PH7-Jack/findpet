@@ -1,10 +1,10 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <header-app />
-    <q-page-container :class="$q.platform.is.mobile ? 'padding-bottom' : ''">
+    <q-page-container :class="$q.screen.lt.md ? 'padding-bottom' : ''">
       <router-view />
     </q-page-container>
-    <footer-menu />
+    <footer-menu v-if="$q.screen.lt.md" />
   </q-layout>
 </template>
 
