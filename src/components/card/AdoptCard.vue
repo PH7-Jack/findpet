@@ -6,11 +6,11 @@
         :ratio="1"
       />
       <div class="info">
-        <span class="fs-40 text-weight-normal block">Gato</span>
-        <span class="fs-18 text-weight-light">Um gato de rua</span>
+        <span class="text-weight-normal block namePet">Gato</span>
+        <span class="text-weight-light">Um gato de rua</span>
       </div>
-      <div class="footer-card flex justify-between p-10">
-        <span class="fs-15">2 anos de idade</span>
+      <div class="footer-card flex justify-between">
+        <span>2 anos de idade</span>
         <span class="flex flex-center">
           ver perfil <q-icon name="fa fa-arrow-right" class="arrow-right" />
         </span>
@@ -27,19 +27,22 @@ export default {
 
 <style lang="scss" scoped>
 .pet-box {
-  width: 90%;
+  width: 95%;
   position: relative;
   left: 50%;
-  margin: 5% 0% 5% 0%;
   transform: translateX(-50%);
+  margin: 5% 0% 5% 0%;
 }
+
 .footer-card {
   background: #000000;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 10px;
   color: white;
+  font-size: 15px;
 }
 .info {
   width: 100%;
@@ -54,10 +57,14 @@ export default {
   position: absolute;
   bottom: 35px;
   left: 0px;
-  padding-left: 10px;
-  padding-top: 20px;
+  padding: 20px 10px 10px 10px;
   line-height: 35px;
   color: white;
+  font-size: 18px;
+}
+
+.namePet {
+  font-size: 40px;
 }
 
 .arrow-right {
@@ -66,5 +73,45 @@ export default {
 
 .arrow-right:hover {
   color: $primary;
+}
+
+@media all and (min-width: 700px) {
+  .pet-box {
+    width: 80%;
+  }
+
+  .info {
+    padding: 20px 35px 0px 32px;
+  }
+
+  .footer-card {
+    padding: 10px 35px 10px 35px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .pet-box {
+    width: 60%;
+    left: 2.5%;
+    transform: translateX(0);
+  }
+
+  .info {
+    padding: 40px 65px 40px 20px;
+    font-size: 22px;
+  }
+
+  .namePet {
+    font-size: 55px;
+  }
+
+  .footer-card {
+    padding: 20px 65px 20px 22px;
+    font-size: 20px;
+  }
+
+  .arrow-right {
+    padding-left: 10.5px;
+  }
 }
 </style>
