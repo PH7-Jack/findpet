@@ -10,9 +10,12 @@
         round
       >
         <q-menu content-class="p-3 vx-shadow round-10">
-          <q-card style="width: 250px" class="vx-shadow round-10 text-grey-9">
+          <q-card
+            :style="`width: ${$q.screen.gt.xs ? 350 : 285}px`"
+            class="vx-shadow round-10 text-grey-9"
+          >
             <q-toolbar>
-              <q-toolbar-title class="fs-19 text-weight-light">
+              <q-toolbar-title class="fs-19 text-weight-medium">
                 Filtros
               </q-toolbar-title>
               <q-btn flat round dense v-close-popup icon="eva-close-outline" />
@@ -25,6 +28,7 @@
                 v-model="filter.pets"
                 option-label="name"
                 option-value="id"
+                use-chips
                 multiple
                 :options="pets"
                 label="Estou procurando por"
@@ -32,6 +36,7 @@
               <q-select
                 dense
                 filled
+                use-chips
                 v-model="filter.years"
                 multiple
                 :options="years"
@@ -40,6 +45,7 @@
               <q-select
                 dense
                 filled
+                use-chips
                 v-model="filter.colors"
                 multiple
                 :options="colors"
@@ -61,6 +67,7 @@
               </div>
               <qx-btn
                 dense
+                push
                 color="primary"
                 class="full-width"
                 label="Salvar"
@@ -89,15 +96,28 @@ export default {
   data () {
     return {
       filter: {
-        pets: [{ id: 1, name: 'Gato' }, { id: 2, name: 'Cachorro' }],
-        years: [1, 2, 3],
-        colors: ['Preto', 'Pardo', 'Branco', 'Amarelo', 'Malhado'],
+        pets: [
+          { id: 1, name: 'Gato' },
+          { id: 2, name: 'Cachorro' }
+        ],
+        years: [
+          { label: '1 ano', value: 1 },
+          { label: '2 anos', value: 2 },
+          { label: '3 anos', value: 3 }
+        ],
+        colors: [],
         proximity: 3
       },
-      pets: [{ id: 1, name: 'Gato' }, { id: 2, name: 'Cachorro' }],
+      pets: [
+        { id: 1, name: 'Gato' },
+        { id: 2, name: 'Cachorro' }
+      ],
       years: [1, 2, 3],
       colors: ['Preto', 'Pardo', 'Branco', 'Amarelo', 'Malhado']
     }
+  },
+  created () {
+    this.filter.colors = this.colors
   }
 }
 </script>
