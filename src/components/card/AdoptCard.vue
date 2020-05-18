@@ -11,9 +11,9 @@
       </div>
       <div class="footer-card flex justify-between">
         <span>2 anos de idade</span>
-        <span class="flex flex-center">
+        <router-link to="/" class="flex flex-center">
           ver perfil <q-icon name="fa fa-arrow-right" class="arrow-right" />
-        </span>
+        </router-link>
       </div>
     </q-card>
   </div>
@@ -43,6 +43,10 @@ export default {
   padding: 10px;
   color: white;
   font-size: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 .info {
   width: 100%;
