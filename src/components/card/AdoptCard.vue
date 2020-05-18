@@ -11,7 +11,7 @@
       </div>
       <div class="footer-card flex justify-between">
         <span>2 anos de idade</span>
-        <router-link to="/" class="flex flex-center">
+        <router-link to="/pet/meu-pet" class="flex flex-center">
           ver perfil <q-icon name="fa fa-arrow-right" class="arrow-right" />
         </router-link>
       </div>
