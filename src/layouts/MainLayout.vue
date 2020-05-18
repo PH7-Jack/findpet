@@ -1,7 +1,11 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <header-app />
-    <q-page-container :class="$q.screen.lt.md ? 'padding-bottom' : ''">
+    <q-page-container
+      :class="{
+        'padding-bottom': $q.screen.lt.md && $route.meta.paddingBottom
+      }"
+    >
       <router-view />
     </q-page-container>
     <footer-menu v-if="$q.screen.lt.md" />
