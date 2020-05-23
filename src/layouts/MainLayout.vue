@@ -6,7 +6,7 @@
         'padding-bottom': $q.screen.lt.md && $route.meta.paddingBottom
       }"
     >
-      <router-view />
+      <router-view class="bg-color" />
     </q-page-container>
     <footer-menu v-if="$q.screen.lt.md" />
   </q-layout>
@@ -30,5 +30,8 @@ export default {
 <style lang="scss" scoped>
 .padding-bottom {
   padding-bottom: 80px;
+}
+.bg-color {
+  background: #f2f2f2 !important;
 }
 </style>
