@@ -1,5 +1,5 @@
 <template>
-  <q-page padding>
+  <q-page class="bg-color" padding>
     <q-toolbar class="bg-white round-8">
       <q-btn
         class="relative"
@@ -121,3 +121,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.bg-color {
+  background: #f2f2f2 !important;
+}
+</style>
