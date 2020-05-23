@@ -73,7 +73,7 @@
           <q-separator />
           <q-list>
             <q-item v-for="item in details" :key="item.label" class="p-0" dense>
-              <q-item-section side>
+              <q-item-section avatar>
                 <b>{{ item.label }}:</b>
               </q-item-section>
               <q-item-section>{{ item.value }}</q-item-section>
