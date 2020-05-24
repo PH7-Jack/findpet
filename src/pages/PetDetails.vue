@@ -62,6 +62,14 @@
 
     <q-card class="vx-shadows shadow-0 card-info">
       <q-card-section>
+        <div class="flex justify-between fs-15">
+          <b>Nome do Pet</b>
+          <b>
+            <q-icon name="eva-pin-outline" />
+            2 km
+          </b>
+        </div>
+        <q-separator spaced />
         <p>
           O gato (felis catus) é um mamífero carnívoro e quadrúpede pertencente
           à família Felidae e à ordem carnívora. É um animal doméstico apreciado
